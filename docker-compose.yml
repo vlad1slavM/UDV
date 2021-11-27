@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  udv:
+    container_name: udv
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - "PYTHONUNBUFFERED=1"
+
+  redis:
+    image: redis:latest
