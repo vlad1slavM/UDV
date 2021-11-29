@@ -1,6 +1,7 @@
 import unittest
 from aiohttp import web
 
+
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         self.assertEqual(True, False)  # add assertion here
